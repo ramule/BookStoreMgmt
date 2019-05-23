@@ -1,0 +1,82 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='navBarColor'>
+    <button ion-button menuToggle icon-only (click)="openMenu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="AddToCart()">
+      <ion-icon name="cart"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="slide">
+    <ion-slides autoplay="1000" loop="true" speed="300">
+      <ion-slide>
+        <img src="assets/imgs/Books_Images/book1.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/Books_Images/book2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/Books_Images/book3.jpg">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <h4 class="text">Categories</h4>
+
+  <div class="card-background-page">
+
+    <ion-card (click)="Biography()">
+      <img src="assets/imgs/Grid_Images/biographyBook.jpg" />
+      <div class="card-title">Biography Books</div>
+    </ion-card>
+
+    <ion-card (click)="Business()">
+      <img src="assets/imgs/Grid_Images/businessBook.jpg" />
+      <div class="card-title">Business Books</div>
+    </ion-card>
+
+    <ion-card (click)="Children()">
+      <img src="assets/imgs/Grid_Images/childrenBooks.jpg" />
+      <div class="card-title">Children Books</div>
+    </ion-card>
+
+    <ion-card (click)="Comic()">
+      <img src="assets/imgs/Grid_Images/comicBook.jpg" />
+      <div class="card-title">Comic Books</div>
+    </ion-card>
+
+    <ion-card (click)="Fiction()">
+      <img src="assets/imgs/Grid_Images/fictionBooks.jpg" />
+      <div class="card-title">Fiction Books</div>
+    </ion-card>
+
+    <ion-card (click)="Inspiration()">
+      <img src="assets/imgs/Grid_Images/InspirationBook.jpg" />
+      <div class="card-title">Inspiration Books</div>
+    </ion-card>
+
+    <ion-card (click)="Literature()">
+      <img src="assets/imgs/Grid_Images/literatureBook.jpg" />
+      <div class="card-title">Literature Books</div>
+    </ion-card>
+
+    <ion-card (click)="Mythology()">
+      <img src="assets/imgs/Grid_Images/mythologyBook.jpg" />
+      <div class="card-title">Mythology Books</div>
+    </ion-card>
+  </div>
+
+</ion-content>

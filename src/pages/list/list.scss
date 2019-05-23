@@ -1,0 +1,26 @@
+page-list {
+.slide{
+    margin-top: -1%;
+}
+.text{
+    font-weight:bold;
+    color: red;
+    text-decoration: underline;
+    text-align: center
+}
+.card-background-page{
+    ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 1.5em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+}
+}

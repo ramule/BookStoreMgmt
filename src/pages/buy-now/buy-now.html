@@ -1,0 +1,61 @@
+<!--
+  Generated template for the BuyNowPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>buyNow</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <form [formGroup]="BuyNowForm">
+    <ion-list style="padding-left: 0%;padding-right:4%">
+        <ion-item class="item">
+            <ion-label floating>Name</ion-label>
+            <ion-input formControlName="name" [ngModel]="value?.name"  type="text"></ion-input>
+          </ion-item>
+
+        <ion-item class="item">
+          <ion-label floating>Address</ion-label>
+          <ion-input formControlName="address" [ngModel]="value?.address" type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item class="item">
+          <ion-label floating>Contact No</ion-label>
+          <ion-input formControlName="contact" [ngModel]="value?.contact" type="tel"></ion-input>
+        </ion-item>
+      
+      
+          <ion-item *ngIf="data" >
+            <ion-avatar item-start>
+              <img [src]="data.image" style="height:40%;border-radius:0%">
+            </ion-avatar>
+            <h2>{{data.name}}</h2>
+            <p>Rs.{{data.price}}
+      
+            </p>
+      
+          </ion-item>
+        </ion-list>
+
+      
+     
+      <button ion-button block color="navBarColor" style="width:96%;border-radius:30px" [disabled]="!BuyNowForm.valid"  (click)="Checkout(data)" type="submit">Checkout</button>
+      
+      
+      </form>
+      
+      
+      
+
+
+
+
+
+</ion-content>
